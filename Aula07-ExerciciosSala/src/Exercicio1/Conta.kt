@@ -1,19 +1,19 @@
 package Exercicio1
 
-class Conta (numeroDaConta: String, saldo: Double, titular: Cliente) {
+class Conta (numeroDaConta: String, var saldo: Double, titular: Cliente) {
 
-    var saldo = saldo
 
-    fun deposito(quantiaEmDinheiro: Double) {
-        saldo = saldo + quantiaEmDinheiro
+
+    fun depositar(quantiaEmDinheiro: Double) {
+        saldo += quantiaEmDinheiro
         println("Depósito")
         println("Novo Saldo: $saldo")
     }
 
 
-    fun saque(quantiaEmDinheiroSaque: Double) {
+    fun sacar(quantiaEmDinheiroSaque: Double) {
         if(saldo > quantiaEmDinheiroSaque ) {
-            saldo = saldo - quantiaEmDinheiroSaque
+            saldo -= quantiaEmDinheiroSaque
             println("Saque")
             println("Novo Saldo: $saldo")
         } else println("Saldo Insuficiente")
