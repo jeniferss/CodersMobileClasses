@@ -1,10 +1,10 @@
 package Exercicio5
 
 class Concessionaria () {
+    val registroDeVenda = arrayListOf<Venda>()
 
     fun registrarVenda(cliente: Cliente, veiculo: Veiculo, valorDaVenda: Double){
-        println("Comprador: $cliente")
-        println("Veículo: $veiculo")
-        println("Valor da venda: $valorDaVenda")
+        val novaVenda = Venda(cliente, veiculo, valorDaVenda)
+        registroDeVenda.add(novaVenda)
     }
 }
