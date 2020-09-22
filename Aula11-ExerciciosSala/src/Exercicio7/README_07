@@ -1,0 +1,13 @@
+Exercício 7:
+1.Crie uma Classe CalculoMatematico. Nela,crie um método divisao,que recebe como parâmetros os valores a serem divididos.
+O retorno é o resultado da divisão(todosos números devem ser do tipo inteiro);
+2.Crie uma classe de teste para testar a CalculoMatematico. Nela crie um objetoCalculoMatematico e acesse o método divisao,
+tentando dividir 4 por 0. Execute a classe e veja o que acontece;
+3.Crie um bloco try...catch no método divisão para tratar a operação realizada;
+No catch:o Informar o objeto do tipo ArithmeticException
+4.Imprimir uma mensagem informando que a operação não pode ser realizadao Retorna zero. Tire o bloco try...catch do método divisão;
+5.Adicione throws ArithmeticException na assinatura do método;
+6.E na primeira linha do bloco do método,faça uma verificação se o divisor é igual a 0: Se for,lance uma exceção throw
+new ArithmeticException(“Texto”);
+7.Na classe de teste, crie um bloco try...catch,tentando executar o método divisão;
+o Catch para ArithmeticExceptiono No bloco do Catch, imprima o atributo message do objeto criadodo tipo ArithmeticException

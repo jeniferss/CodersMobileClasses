@@ -1,0 +1,6 @@
+Exercício4:
+1.Criar uma classe Funcionário que tenha como propriedades um nome(String) e  numeroDeRegistro(Integer).
+2.Criar na classe Main uma lista de funcionários e adicionar quatro funcionários novos.
+3.Criar um funcionário novo com um número de registro contido na lista e perguntar se ele está na lista (utilizar a função contains)
+4.Sobrescrever o equals da classe Funcionário para que compare apenas o número de registro.
+5.Perguntar novamente se o funcionário novo está na lista. Qual é o resultado? O que mudou? Por quê?
