@@ -1,6 +1,0 @@
-Exercício3:
-1.Criar uma classeAluno que tenha como propriedades um nome(String) e numeroDeAluno(Integer).
-2.Na classe Main, criar uma lista de alunos e adicionar quatro alunos novos.
-3.Criar um aluno novo com um número de aluno contido na lista e perguntar se ele está na lista (utilizar a função contains).
-4.Sobrescrever o equals da classeAluno para que compare apenas o número de aluno.
-5.Perguntar novamente se o aluno novo está na lista. Qual é o resultado? O que mudou? Por quê?

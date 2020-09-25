@@ -1,3 +1,0 @@
-interface Imprimivel {
-    fun mostrarDados()
-}
