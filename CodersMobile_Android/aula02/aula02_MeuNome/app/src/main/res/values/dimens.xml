@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginTopNome">20dp</dimen>
+    <dimen name="marginLeftNome">20dp</dimen>
+    <dimen name="nomeSize">20sp</dimen>
+    <dimen name="marginLeftDigite">20dp</dimen>
+    <dimen name="marginRightDigite">20dp</dimen>
+    <dimen name="marginTopDigite">20dp</dimen>
+    <dimen name="marginTopButton">30dp</dimen>
+    <dimen name="exibirSize">20sp</dimen>
+    <dimen name="buttonTopPadding">3dp</dimen>
+    <dimen name="buttonBottonPadding">3dp</dimen>
+    <dimen name="buttonLeftPadding">80dp</dimen>
+    <dimen name="buttonRightPadding">80dp</dimen>
+    <dimen name="marginTopMeuNome">70dp</dimen>
+    <dimen name="meuNomeSize">30sp</dimen>
+</resources>

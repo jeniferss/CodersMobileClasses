@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginLeftNome"
+        android:layout_marginTop="@dimen/marginTopNome"
+        android:text="@string/nome"
+        android:textColor="@color/backgroundBlack"
+        android:textSize="@dimen/nomeSize" />
+
+    <EditText
+        android:id="@+id/nomeInserido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginLeftDigite"
+        android:layout_marginTop="@dimen/marginTopDigite"
+        android:layout_marginEnd="@dimen/marginRightDigite"
+        android:hint="@string/digite_seu_nome"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnExibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopButton"
+        android:background="@color/backgroudButton"
+        android:paddingStart="@dimen/buttonLeftPadding"
+        android:paddingTop="@dimen/buttonTopPadding"
+        android:paddingEnd="@dimen/buttonRightPadding"
+        android:paddingBottom="@dimen/buttonBottonPadding"
+        android:text="@string/exibir"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/exibirSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopMeuNome"
+        android:gravity="center"
+        android:text="@string/meu_nome"
+        android:textColor="@color/backgroundBlack"
+        android:textSize="@dimen/meuNomeSize" />
+
+    <TextView
+        android:id="@+id/textoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/backgroundBlack"
+        android:textSize="@dimen/meuNomeSize" />
+
+</LinearLayout>

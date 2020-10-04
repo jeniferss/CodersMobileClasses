@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">aula02_MeuNome</string>
+    <string name="nome"><b>Nome</b></string>
+    <string name="exibir">Exibir</string>
+    <string name="digite_seu_nome">Digite o seu nome</string>
+    <string name="meu_nome"><b>Meu nome é</b></string>
+    <string name="x"><b>X</b></string>
+</resources>
