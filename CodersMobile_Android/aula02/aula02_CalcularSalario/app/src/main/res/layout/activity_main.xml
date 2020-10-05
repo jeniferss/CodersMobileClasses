@@ -55,6 +55,7 @@
         android:paddingRight="@dimen/paddingButton"
         android:text="@string/calcular"
         android:textColor="@color/BRANCO"
+        android:textAllCaps="false"
         android:textSize="@dimen/buttonTextSize" />
 
     <TextView

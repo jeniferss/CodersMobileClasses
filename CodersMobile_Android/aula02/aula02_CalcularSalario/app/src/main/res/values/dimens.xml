@@ -10,7 +10,7 @@
     <dimen name="paddingButton">60dp</dimen>
     <dimen name="marginTopValorHora">30dp</dimen>
     <dimen name="marginTopButton">30dp</dimen>
-    <dimen name="buttonTextSize">15sp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
     <dimen name="marginTopSalario">100dp</dimen>
     <dimen name="textSizeSalario">30sp</dimen>
 </resources>
