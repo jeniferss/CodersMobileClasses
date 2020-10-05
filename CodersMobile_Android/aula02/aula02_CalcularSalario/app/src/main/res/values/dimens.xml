@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horasTrabalhadasTextSize">20sp</dimen>
+    <dimen name="marginTopHorasTrabalhadas">30dp</dimen>
+    <dimen name="marginStartHorasTrabalhadas">20dp</dimen>
+    <dimen name="marginStartHoras">20dp</dimen>
+    <dimen name="marginEndHoras">20dp</dimen>
+    <dimen name="valorHoraTextSize">20sp</dimen>
+    <dimen name="marginStartValorHora">20dp</dimen>
+    <dimen name="paddingButton">60dp</dimen>
+    <dimen name="marginTopValorHora">30dp</dimen>
+    <dimen name="marginTopButton">30dp</dimen>
+    <dimen name="buttonTextSize">15sp</dimen>
+    <dimen name="marginTopSalario">100dp</dimen>
+    <dimen name="textSizeSalario">30sp</dimen>
+</resources>

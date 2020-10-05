@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/temperaturaTextSize"
+        android:layout_marginStart="@dimen/marginStartTemperatura"
+        android:layout_marginTop="@dimen/marginTopTemperatura"
+        android:textColor="@color/colorBlack"
+        android:text="@string/temperatura" />
+
+    <EditText
+        android:id="@+id/temperaturaInserida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartDigite"
+        android:layout_marginEnd="@dimen/marginEndDigite"
+        android:layout_marginTop="@dimen/marginTopDigite"
+        android:inputType="number"
+        android:hint="@string/digite_a_temperatura"/>
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopButton"
+        android:background="@color/buttonColor"
+        android:textAllCaps="false"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/converterTextSize"
+        android:paddingRight="@dimen/paddingConverter"
+        android:paddingLeft="@dimen/paddingConverter"
+        android:layout_gravity="center"
+        android:text="@string/converter"/>
+
+    <TextView
+        android:id="@+id/temperaturaConvertida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/resultadoTextSize"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/marginTopResultado"
+        android:gravity="center"
+        android:text="@string/x_f"/>
+
+
+</LinearLayout>

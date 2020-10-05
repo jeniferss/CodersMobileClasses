@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">aula02_CalcularSalario</string>
+    <string name="strSalario"><b>R$ %.2f</b></string>
+    <string name="horas_trabalhadas"><b>Horas Trabalhadas</b></string>
+    <string name="hintHoras">ex: 180</string>
+    <string name="hintValor">ex: 15</string>
+    <string name="valor_da_hora"><b>Valor da hora</b></string>
+    <string name="calcular">Calcular</string>
+    <string name="salario"><b>R$ XXXX,XX</b></string>
+</resources>

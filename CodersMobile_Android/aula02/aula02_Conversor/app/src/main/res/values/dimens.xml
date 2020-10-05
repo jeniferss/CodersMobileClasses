@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="temperaturaTextSize">20sp</dimen>
+    <dimen name="marginStartTemperatura">20dp</dimen>
+    <dimen name="marginTopTemperatura">30dp</dimen>
+    <dimen name="marginStartDigite">20dp</dimen>
+    <dimen name="marginEndDigite">20dp</dimen>
+    <dimen name="marginTopDigite">30dp</dimen>
+    <dimen name="marginTopButton">30dp</dimen>
+    <dimen name="converterTextSize">20sp</dimen>
+    <dimen name="paddingConverter">40dp</dimen>
+    <dimen name="marginTopResultado">80dp</dimen>
+    <dimen name="resultadoTextSize">30sp</dimen>
+</resources>

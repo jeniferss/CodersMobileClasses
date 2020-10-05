@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">aula02_Conversor</string>
+    <string name="digite_a_temperatura">Digite a temperatura</string>
+    <string name="converter">Converter</string>
+    <string name="x_f"><b>x ºF</b></string>
+    <string name="temperatura"><b>Temperatura em ºC</b></string>
+</resources>

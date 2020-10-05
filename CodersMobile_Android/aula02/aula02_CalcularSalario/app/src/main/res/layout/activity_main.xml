@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartHorasTrabalhadas"
+        android:layout_marginTop="@dimen/marginTopHorasTrabalhadas"
+        android:text="@string/horas_trabalhadas"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/horasTrabalhadasTextSize" />
+
+    <EditText
+        android:id="@+id/horasTrabalhadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartHoras"
+        android:layout_marginEnd="@dimen/marginEndHoras"
+        android:hint="@string/hintHoras"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartValorHora"
+        android:layout_marginTop="@dimen/marginTopValorHora"
+        android:text="@string/valor_da_hora"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/valorHoraTextSize" />
+
+    <EditText
+        android:id="@+id/valorHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartHoras"
+        android:layout_marginEnd="@dimen/marginEndHoras"
+        android:hint="@string/hintValor"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopButton"
+        android:background="@color/buttonColor"
+        android:paddingLeft="@dimen/paddingButton"
+        android:paddingRight="@dimen/paddingButton"
+        android:text="@string/calcular"
+        android:textColor="@color/BRANCO"
+        android:textSize="@dimen/buttonTextSize" />
+
+    <TextView
+        android:id="@+id/txtSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopSalario"
+        android:gravity="center"
+        android:text="@string/salario"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/textSizeSalario" />
+
+</LinearLayout>
