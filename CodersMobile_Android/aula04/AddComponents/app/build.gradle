@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.digitalhouse.fakeloginapp"
+        applicationId "com.example.myapplication.addcomponents"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -33,5 +33,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
     implementation 'com.google.android.material:material:1.2.1'
+
 }

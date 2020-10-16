@@ -39,7 +39,7 @@
         android:paddingStart="40dp"
         android:layout_gravity="center|center_vertical">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameCreateAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,29 +48,54 @@
             android:inputType="text"
             android:textColor="@color/colorMain"
             android:textColorHint="@color/colorMain"
-            android:backgroundTint="@color/colorMain"/>
+            android:backgroundTint="@color/colorMain"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailCreateAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/htEmailCreateAccount"
+            android:singleLine="true"
             android:inputType="textEmailAddress"
-            android:layout_marginTop="20dp"
             android:textColor="@color/colorMain"
             android:textColorHint="@color/colorMain"
-            android:backgroundTint="@color/colorMain"/>
+            android:backgroundTint="@color/colorMain"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordCreateAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/htPasswordCreateAccount"
+            android:singleLine="true"
             android:inputType="textPassword"
-            android:layout_marginTop="20dp"
             android:textColor="@color/colorMain"
             android:textColorHint="@color/colorMain"
-            android:backgroundTint="@color/colorMain"/>
+            android:backgroundTint="@color/colorMain"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <CheckBox
@@ -79,8 +104,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorMain"
             android:layout_marginTop="10dp"
-            android:text="I have read and agree the Privacy Policy"/>
-
+            android:text="@string/privacy_policy"/>
 
 
         <Button
@@ -92,7 +116,6 @@
             android:text="@string/btnSign_up_createAccount"
             android:textSize="16sp"
             android:textColor="@color/colorWhite"
-            android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:layout_marginTop="50dp"
             android:enabled="false"/>
 
@@ -107,5 +130,10 @@
             android:layout_marginTop="10dp"/>
 
     </LinearLayout>
+
+    <View
+        android:id="@+id/mostrarSnack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

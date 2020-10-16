@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
 
-            val emailLoginL = emailLogin.text.toString()
-            val senhaLogin = passwordLogin.text.toString()
+            val emailLoginL = emailLogin.editText?.text.toString()
+            val senhaLogin = passwordLogin.editText?.text.toString()
 
             val usuario = UserService.logIn(emailLoginL, senhaLogin)
 
@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("NOME", usuario.name)
                 startActivity(intent)
             } else {
-                emailLogin.text.clear()
-                passwordLogin.text.clear()
+                emailLogin.editText?.text?.clear()
+                passwordLogin.editText?.text?.clear()
                 Toast.makeText(this, ERROR_LOGIN, Toast.LENGTH_SHORT).show()
             }
         }

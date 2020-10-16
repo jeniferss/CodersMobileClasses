@@ -2,17 +2,18 @@
     <string name="app_name">FakeLoginApp</string>
     <string name="tvLogin">Login</string>
     <string name="tvTo_continue">TO CONTINUE</string>
-    <string name="htEmail">email</string>
-    <string name="htPassword">password</string>
+    <string name="htEmail">Email</string>
+    <string name="htPassword">Password</string>
     <string name="btnLog_in">Log in</string>
     <string name="btnCreate_account">Create Account</string>
     <string name="tvSing_up">SING UP</string>
     <string name="tvFor_your_account">FOR YOUR ACCOUNT</string>
-    <string name="htName">name</string>
-    <string name="htEmailCreateAccount">email</string>
-    <string name="htPasswordCreateAccount">password</string>
+    <string name="htName">Name</string>
+    <string name="htEmailCreateAccount">Email</string>
+    <string name="htPasswordCreateAccount">Password</string>
     <string name="btnLog_in_createAccount">LOG IN</string>
     <string name="btnSign_up_createAccount">SIGN UP</string>
     <string name="tvWelcome">WELCOME</string>
     <string name="meu_nome">Meu Nome</string>
+    <string name="privacy_policy">I have read and agree the Privacy Policy</string>
 </resources>

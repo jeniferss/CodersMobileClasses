@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.digitalhouse.fakeloginapp.users.UserService
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_create_account.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
@@ -29,9 +30,9 @@ class CreateAccountActivity : AppCompatActivity() {
 
         btnSignUpCreateAccount.setOnClickListener {
 
-            val nome = nameCreateAccount.text.toString()
-            val email = emailCreateAccount.text.toString()
-            val password = passwordCreateAccount.text.toString()
+            val nome = nameCreateAccount.editText?.text.toString()
+            val email = emailCreateAccount.editText?.text.toString()
+            val password = passwordCreateAccount.editText?.text.toString()
 
             if(nome.isEmpty()){
                 nameCreateAccount.error = ERROR_EMPTY
@@ -48,10 +49,14 @@ class CreateAccountActivity : AppCompatActivity() {
                     Toast.makeText(this, sucesso, Toast.LENGTH_SHORT).show()
                     finish()
                 } catch (e: Exception) {
-                    Toast.makeText(this, ERROR, Toast.LENGTH_SHORT).show()
+
+                    Snackbar.make(mostrarSnack, "Usuário já cadastrado!", Snackbar.LENGTH_SHORT)
+                        .setAction("LOGAR") {
+                            finish()
+                        }
+                        .show()
                 }
             }
-
 
         }
 
