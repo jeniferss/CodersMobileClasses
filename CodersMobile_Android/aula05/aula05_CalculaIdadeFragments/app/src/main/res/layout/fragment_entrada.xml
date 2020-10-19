@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3700B3"
+    tools:context=".EntradaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_20sp"
+        android:layout_marginEnd="@dimen/margin_20sp"
+        android:backgroundTint="@color/White"
+        android:hint="@string/ht_nome"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/textSize_20sp" />
+
+    <EditText
+        android:id="@+id/txtAnoNasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_5sp"
+        android:layout_marginEnd="@dimen/margin_20sp"
+        android:backgroundTint="@color/White"
+        android:hint="@string/ht_ano_nascimento"
+        android:textColor="@color/White"
+        android:inputType="number"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/textSize_20sp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_20sp"
+        android:backgroundTint="@color/White"
+        android:paddingStart="@dimen/padding_50sp"
+        android:paddingEnd="@dimen/padding_50sp"
+        android:text="@string/txt_calcular"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/textSize_20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -43,9 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="16dp"
-            android:background="@color/colorMain"
+            android:backgroundTint="@color/colorMain"
             app:srcCompat="@drawable/ic_baseline_favorite_24"/>
-
         <View
             android:id="@+id/mostrar"
             android:layout_width="match_parent"
