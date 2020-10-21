@@ -21,7 +21,7 @@ class SaidaFragment : Fragment() {
     fun mostrarDado(nome: String, idade: Int): String {
         lateinit var sufixo: String
         return if (idade >= 0) {
-            if (idade >= 1) {
+            if (idade > 1) {
                 sufixo = "anos"
                 "$nome, você tem $idade $sufixo"
             } else {
