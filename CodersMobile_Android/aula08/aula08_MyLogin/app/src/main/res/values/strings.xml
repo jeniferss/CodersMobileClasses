@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">aula08_MyLogin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_login_app">My Login App</string>
+    <string name="work_in_progress">work in progress...</string>
+    <string name="htEmail">Email</string>
+    <string name="htSenha">Senha</string>
+    <string name="htLogin">LOGIN</string>
+    <string name="let_s_start">Let\'s start!</string>
+    <string name="join_us">Join Us!</string>
+    <string name="htUsername">Username</string>
+    <string name="htPassword">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="repeate_password">Repeate Password</string>
+    <string name="i_have_read_and_agree_with_the_privacy_policy">I have read and agree with the Privacy Policy</string>
+</resources>

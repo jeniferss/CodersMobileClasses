@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="@string/my_login_app"
+        android:textColor="@color/cianoDetail"
+        android:textSize="@dimen/dim_35sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="@string/work_in_progress"
+        android:textColor="@color/cianoDetail"
+        android:textSize="@dimen/dim_20sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="30dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/azulDark"
+                app:tabIndicatorColor="@color/verdeDetail"
+                app:tabSelectedTextColor="@color/cianoDetail"
+                app:tabTextColor="@color/verdeDetail" />
+        </androidx.viewpager.widget.ViewPager>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/viewShowSnackBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

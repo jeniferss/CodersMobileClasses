@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azulDark"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="@string/let_s_start"
+        android:textColor="@color/cianoDetail"
+        android:textSize="@dimen/dim_35sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_20dp"
+        android:backgroundTint="@color/cianoDetail"
+        android:hint="@string/htUsername"
+        app:errorIconTint="@color/branco"
+        app:errorTextColor="@color/branco"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/cianoDetail"
+        android:textColorHint="@color/cianoDetail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#52cdb0"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_20dp"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginRight="@dimen/dim_20dp"
+        android:backgroundTint="@color/cianoDetail"
+        app:errorIconTint="@color/branco"
+        app:errorTextColor="@color/branco"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/cianoDetail"
+        android:hint="@string/htPassword"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/cianoDetail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/cianoDetail"
+            android:textSize="@dimen/dim_15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:backgroundTint="@color/cianoDetail"
+        android:text="@string/htLogin"
+        android:textSize="@dimen/dim_18sp"/>
+
+</LinearLayout>
