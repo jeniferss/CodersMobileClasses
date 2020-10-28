@@ -19,6 +19,7 @@
         android:textSize="@dimen/dim_35sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etLayoutUsername"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +28,6 @@
         android:layout_marginEnd="@dimen/dim_20dp"
         android:backgroundTint="@color/cianoDetail"
         android:hint="@string/htUsername"
-        app:errorIconTint="@color/branco"
         app:errorTextColor="@color/branco"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
         app:startIconTint="@color/cianoDetail"
@@ -43,6 +43,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etLayoutPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +51,6 @@
         android:layout_marginTop="@dimen/dim_20dp"
         android:layout_marginRight="@dimen/dim_20dp"
         android:backgroundTint="@color/cianoDetail"
-        app:errorIconTint="@color/branco"
         app:errorTextColor="@color/branco"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
         app:startIconTint="@color/cianoDetail"

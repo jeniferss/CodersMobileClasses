@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_registro_fragmento.*
 import kotlinx.android.synthetic.main.fragment_registro_fragmento.view.*
@@ -22,9 +23,8 @@ const val ERROR_SENHAS = "Senhas não conferem!"
 
 class RegistroFragmento : Fragment() {
 
-    var checked = false
-
     lateinit var iClick: IClick
+    lateinit var viewRegistro: View
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -35,7 +35,12 @@ class RegistroFragmento : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val viewRegistro = inflater.inflate(R.layout.fragment_registro_fragmento, container, false)
+        viewRegistro = inflater.inflate(R.layout.fragment_registro_fragmento, container, false)
+
+        viewRegistro.cbAgree.setOnCheckedChangeListener { _, isChecked ->
+            btnSignUp.isEnabled = isChecked
+        }
+
         validarCampos(viewRegistro)
         return viewRegistro
     }
@@ -48,38 +53,38 @@ class RegistroFragmento : Fragment() {
             val password = view.etPasswordRegistro.text.toString()
             val passwordConfirmation = view.etPasswordConfirmation.text.toString()
 
-            if (username.isEmpty()) {
+            if (username.trim().isEmpty()) {
                 view.etUsernameRegistro.error = ERROR_VAZIO
-            } else if (password.isEmpty()) {
+            }
+            if (password.trim().isEmpty()) {
                 view.etPasswordRegistro.error = ERROR_VAZIO
-            } else if (passwordConfirmation.isEmpty()) {
+            }
+            if (passwordConfirmation.trim().isEmpty()) {
                 view.etPasswordConfirmation.error = ERROR_VAZIO
             } else {
                 try {
                     if (password == passwordConfirmation) {
                         UserActions.register(username, password)
                         iClick.clickSetToast(1, SUCESS_REGISTRO)
-                        etUsernameRegistro.text?.clear()
-                        etPasswordRegistro.text?.clear()
-                        etPasswordConfirmation.text?.clear()
-                        checked = false
+                        iClick.clickNewTab(0)
+                        iClick.userNameAlterado(etUsernameRegistro.text.toString())
+                        clear()
                     } else {
                         iClick.clickSetToast(2, ERROR_SENHAS)
                     }
                 } catch (e: Exception) {
                     iClick.clickSetToast(3, ERROR_REGISTRO)
-                    etUsernameRegistro.text?.clear()
-                    etPasswordRegistro.text?.clear()
-                    etPasswordConfirmation.text?.clear()
+                    clear()
                 }
             }
-
         }
 
-        view.cbAgree.setOnCheckedChangeListener { _, isChecked ->
-           btnSignUp.isEnabled = isChecked
-        }
     }
 
+    fun clear(){
+        etUsernameRegistro.text?.clear()
+        etPasswordRegistro.text?.clear()
+        etPasswordConfirmation.text?.clear()
+    }
 }
 

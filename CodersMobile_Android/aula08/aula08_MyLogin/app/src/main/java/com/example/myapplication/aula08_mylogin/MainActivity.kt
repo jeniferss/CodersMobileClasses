@@ -3,6 +3,7 @@ package com.example.myapplication.aula08_mylogin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainer
@@ -13,16 +14,22 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class MainActivity : AppCompatActivity(), IClick {
+
+    val tab by lazy {findViewById<TabLayout>(R.id.tabLayoutMain)}
+
+    private lateinit var loginFragment: LoginFragment
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val pager = findViewById<ViewPager>(R.id.viewPagerMain)
-        val tab = findViewById<TabLayout>(R.id.tabLayoutMain)
+
+        loginFragment = LoginFragment()
 
         tab.setupWithViewPager(pager)
 
-        val fragmentos = listOf(LoginFragment(), RegistroFragmento())
+        val fragmentos = listOf(loginFragment, RegistroFragmento())
 
         val titulos = listOf("Sign In", "Sign Up")
 
@@ -54,4 +61,17 @@ class MainActivity : AppCompatActivity(), IClick {
             }
         }
     }
+
+    override fun clickNewTab(index: Int) {
+        val novaTab = tab.getTabAt(index)
+        novaTab?.select()
+    }
+
+    override fun userNameAlterado(username: String) {
+        loginFragment.userNameAlterado(username)
+    }
+
+
+
+
 }
